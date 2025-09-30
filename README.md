@@ -1,16 +1,21 @@
-# React + Vite
+Create a Project Folder: Create a new folder for your project (e.g., factorial-api) and open it in VS Code.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Initialize a Node.js Project: Open the VS Code terminal and run this command to create a package.json file.
 
-Currently, two official plugins are available:
+bash
+npm init -y
+Install Express: Install the Express framework.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+bash
+npm install express
+Create the Server File: Create a new file named server.js in your project folder.
 
-## React Compiler
+Add the Code: Copy and paste the Express API code above into server.js.
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Run the Server: In the terminal, start your Express server.
 
-## Expanding the ESLint configuration
+bash
+node server.js
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+Test the API: Open your web browser and go to http://localhost:3000/factorial/5. You will see the following JSON response
